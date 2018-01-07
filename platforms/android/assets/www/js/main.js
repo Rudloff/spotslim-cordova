@@ -166,6 +166,22 @@ var spotslim = (function () {
         pageNavigator.replacePage('templates/home.html', {callback: initHomePage});
     }
 
+    function musicControlsEvents(action) {
+        switch (JSON.parse(action).message) {
+            case 'music-controls-next':
+                nextTrack();
+                break;
+            case 'music-controls-previous':
+                previousTrack();
+                break;
+            case 'music-controls-play':
+            case 'music-controls-pause':
+            case 'music-controls-media-button-headset-hook' :
+                togglePlay();
+                break;
+        }
+    }
+
     function updatePlayer(playbackState) {
         if (playbackState) {
             playerBar.title.innerHTML = playbackState.track_window.current_track.name + '<br/>' + playbackState.track_window.current_track.artists[0].name;
@@ -174,10 +190,21 @@ var spotslim = (function () {
             playerBar.next.disabled = false;
             playerBar.toggle.disabled = false;
             if (playbackState.paused) {
+                var isPlaying = false;
                 playerBar.toggle.icon.setAttribute('icon', 'fa-play');
             } else {
+                var isPlaying = true;
                 playerBar.toggle.icon.setAttribute('icon', 'fa-pause');
             }
+
+            MusicControls.create({
+                track: playbackState.track_window.current_track.name,
+                artist: playbackState.track_window.current_track.artists[0].name,
+                cover: playbackState.track_window.current_track.album.images[0].url,
+                isPlaying: isPlaying
+            });
+            MusicControls.subscribe(musicControlsEvents);
+            MusicControls.listen();
         }
     }
 

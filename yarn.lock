@@ -592,8 +592,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000787"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000787.tgz#ca07a281be536a88bd7fac96ba895f3cf53f811b"
+  version "1.0.30000789"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000789.tgz#5cf3fec75480041ab162ca06413153141e234325"
 
 caseless@~0.11.0:
   version "0.11.0"
@@ -1017,6 +1017,10 @@ cordova-plugin-crosswalk-webview@^2.3.0:
 cordova-plugin-customurlscheme@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/cordova-plugin-customurlscheme/-/cordova-plugin-customurlscheme-4.3.0.tgz#02f968778b4093990eb0407f3fa1b1458d705f94"
+
+cordova-plugin-music-controls@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-music-controls/-/cordova-plugin-music-controls-2.1.4.tgz#a474a381b9ac029980a8e1c495c4bf57407eb228"
 
 cordova-plugin-whitelist@^1.3.2:
   version "1.3.3"
@@ -4312,7 +4316,7 @@ spotify-web-api-js@~0.23.0:
 
 "spotslim@https://github.com/Rudloff/spotslim.git#develop":
   version "0.1.0"
-  resolved "https://github.com/Rudloff/spotslim.git#c0d2a98dd8cf4cc3c8bcb2f6182353fa735df88f"
+  resolved "https://github.com/Rudloff/spotslim.git#84a9487b93798463129de01201c217f0a854bbb8"
   dependencies:
     css-loader "~0.28.7"
     file-loader "~1.1.5"

@@ -24,5 +24,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-music-controls": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-music-controls"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

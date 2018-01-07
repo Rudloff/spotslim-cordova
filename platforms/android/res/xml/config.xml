@@ -7,6 +7,9 @@
     <feature name="LaunchMyApp">
         <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
     </feature>
+    <feature name="MusicControls">
+        <param name="android-package" value="com.homerours.musiccontrols.MusicControls" />
+    </feature>
     <name>SpotSlim</name>
     <description>
         SpotSlim Cordova app

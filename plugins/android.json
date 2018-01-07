@@ -24,6 +24,9 @@
       "XWALK_MODE": "embedded",
       "XWALK_MULTIPLEAPK": "true",
       "PACKAGE_NAME": "pro.rudloff.spotslim"
+    },
+    "cordova-plugin-music-controls": {
+      "PACKAGE_NAME": "pro.rudloff.spotslim"
     }
   },
   "dependent_plugins": {}

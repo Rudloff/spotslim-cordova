@@ -7,6 +7,14 @@ module.exports = [
     "clobbers": [
       "window.plugins.launchmyapp"
     ]
+  },
+  {
+    "id": "cordova-plugin-music-controls.MusicControls",
+    "file": "plugins/cordova-plugin-music-controls/www/MusicControls.js",
+    "pluginId": "cordova-plugin-music-controls",
+    "clobbers": [
+      "MusicControls"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -14,7 +22,8 @@ module.exports.metadata =
 {
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-customurlscheme": "4.3.0",
-  "cordova-plugin-crosswalk-webview": "2.3.0"
+  "cordova-plugin-crosswalk-webview": "2.3.0",
+  "cordova-plugin-music-controls": "2.1.4"
 };
 // BOTTOM OF METADATA
 });
