@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="1001" id="pro.rudloff.spotslim" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="LaunchMyApp">
+        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
+    </feature>
+    <name>SpotSlim</name>
+    <description>
+        SpotSlim Cordova app
+    </description>
+    <author email="contact@rudloff.pro" href="https://rudloff.pro/">
+        Pierre Rudloff
+    </author>
+    <content src="index.html" />
+    <icon src="www/img/logo_512.png" />
+    <access origin="https://sdk.scdn.co" />
+    <access origin="https://i.scdn.co" />
+    <access origin="https://seektables.scdn.co" />
+    <access origin="https://audio-fa.scdn.co" />
+    <access origin="https://apresolve.spotify.com" />
+    <access origin="https://api.spotify.com" />
+    <access launch-external="yes" origin="https://accounts.spotify.com" />
+    <universal-links>
+        <host name="spotslim.netlib.re" scheme="https" />
+    </universal-links>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
+    <preference name="xwalkVersion" value="23+" />
+    <preference name="xwalkLiteVersion" value="xwalk_core_library_canary:17+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="AndroidLaunchMode" value="singleInstance" />
+</widget>
