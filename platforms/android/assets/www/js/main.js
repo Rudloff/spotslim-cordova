@@ -1,5 +1,5 @@
 /*jslint browser: true, node: true*/
-/*global SpotifyWebApi, Spotify, window, ons, simpleQueryString, cordova*/
+/*global Spotify, window, cordova, MusicControls*/
 
 if (typeof window !== 'object') {
     throw 'SpotSlim must be used in a browser.';
@@ -143,7 +143,6 @@ var spotslim = (function () {
     }
 
     function listSearchResults(error, data) {
-        document.getElementById('search-album-list').textContent = '';
         if (!error) {
             data.albums.items.forEach(addSearchResultItem);
         }
@@ -168,43 +167,50 @@ var spotslim = (function () {
 
     function musicControlsEvents(action) {
         switch (JSON.parse(action).message) {
-            case 'music-controls-next':
-                nextTrack();
-                break;
-            case 'music-controls-previous':
-                previousTrack();
-                break;
-            case 'music-controls-play':
-            case 'music-controls-pause':
-            case 'music-controls-media-button-headset-hook' :
-                togglePlay();
-                break;
+        case 'music-controls-next':
+            nextTrack();
+            break;
+        case 'music-controls-previous':
+            previousTrack();
+            break;
+        case 'music-controls-play':
+        case 'music-controls-pause':
+        case 'music-controls-media-button-headset-hook':
+            togglePlay();
+            break;
+        case 'music-controls-destroy':
+			navigator.app.exitApp();
+			break;
         }
     }
 
     function updatePlayer(playbackState) {
         if (playbackState) {
+            var isPlaying;
             playerBar.title.innerHTML = playbackState.track_window.current_track.name + '<br/>' + playbackState.track_window.current_track.artists[0].name;
             playerBar.progress.value = (playbackState.position / playbackState.duration) * 100;
             playerBar.previous.disabled = false;
             playerBar.next.disabled = false;
             playerBar.toggle.disabled = false;
             if (playbackState.paused) {
-                var isPlaying = false;
+                isPlaying = false;
                 playerBar.toggle.icon.setAttribute('icon', 'fa-play');
             } else {
-                var isPlaying = true;
+                isPlaying = true;
                 playerBar.toggle.icon.setAttribute('icon', 'fa-pause');
             }
 
-            MusicControls.create({
-                track: playbackState.track_window.current_track.name,
-                artist: playbackState.track_window.current_track.artists[0].name,
-                cover: playbackState.track_window.current_track.album.images[0].url,
-                isPlaying: isPlaying
-            });
-            MusicControls.subscribe(musicControlsEvents);
-            MusicControls.listen();
+            if (typeof MusicControls === 'object') {
+                MusicControls.create({
+                    track: playbackState.track_window.current_track.name,
+                    artist: playbackState.track_window.current_track.artists[0].name,
+                    cover: playbackState.track_window.current_track.album.images[0].url,
+                    isPlaying: isPlaying,
+                    hasClose: true
+                });
+                MusicControls.subscribe(musicControlsEvents);
+                MusicControls.listen();
+            }
         }
     }
 
@@ -227,6 +233,7 @@ var spotslim = (function () {
 
     function search(page) {
         document.getElementById('search-term').textContent = page.data.term;
+        document.getElementById('search-album-list').textContent = '';
         spotify.searchAlbums(page.data.term, null, listSearchResults);
     }
 
