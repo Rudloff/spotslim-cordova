@@ -1,0 +1,70 @@
+{
+  "name": "cordova-plugin-music-controls",
+  "version": "2.1.4",
+  "description": "Music controls for Cordova apps",
+  "cordova": {
+    "id": "cordova-plugin-music-controls",
+    "platforms": [
+      "android",
+      "windows",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homerours/cordova-music-controls-plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "music",
+    "controller",
+    "controls",
+    "media",
+    "plugin",
+    "notification",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-windows"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": {
+    "name": "homerours"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/homerours/cordova-music-controls-plugin/issues"
+  },
+  "homepage": "https://github.com/homerours/cordova-music-controls-plugin#readme",
+  "gitHead": "8ae1fdc031bef8b7df7933c4e28e47ec6ce5d666",
+  "_id": "cordova-plugin-music-controls@2.1.4",
+  "_npmVersion": "5.5.1",
+  "_nodeVersion": "9.2.0",
+  "_npmUser": {
+    "name": "homerours",
+    "email": "homerours@gmail.com"
+  },
+  "dist": {
+    "integrity": "sha512-fmxUVJuNXkjkHpLq7spSiy0hS5Z9Wqbqprwl9JhLlNXLU5nrVUxXhcamPLfZeOkrycZxAF69TCWq9MhxhUyQDQ==",
+    "shasum": "a474a381b9ac029980a8e1c495c4bf57407eb228",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-music-controls/-/cordova-plugin-music-controls-2.1.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "homerours",
+      "email": "homerours@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-music-controls-2.1.4.tgz_1511625383805_0.9876164081506431"
+  },
+  "directories": {},
+  "_shasum": "a474a381b9ac029980a8e1c495c4bf57407eb228",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-music-controls/-/cordova-plugin-music-controls-2.1.4.tgz",
+  "_from": "cordova-plugin-music-controls@latest"
+}

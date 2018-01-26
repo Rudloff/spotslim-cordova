@@ -1,0 +1,52 @@
+{
+  "name": "spotslim-cordova",
+  "description": "SpotSlim Cordova app",
+  "version": "0.1.1",
+  "author": "Pierre Rudloff",
+  "bugs": "https://github.com/Rudloff/spotslim-cordova/issues",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-customurlscheme": {
+        "URL_SCHEME": "spotslim",
+        "ANDROID_SCHEME": " ",
+        "ANDROID_HOST": " ",
+        "ANDROID_PATHPREFIX": "/"
+      },
+      "cordova-plugin-crosswalk-webview": {
+        "XWALK_VERSION": "23+",
+        "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+        "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+        "XWALK_MODE": "embedded",
+        "XWALK_MULTIPLEAPK": "true"
+      },
+      "cordova-plugin-music-controls": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-plugin-compat": "^1.1.0",
+    "cordova-plugin-crosswalk-webview": "^2.3.0",
+    "cordova-plugin-customurlscheme": "^4.3.0",
+    "cordova-plugin-music-controls": "^2.1.4",
+    "cordova-plugin-whitelist": "^1.3.2",
+    "spotslim": "0.1.1"
+  },
+  "devDependencies": {
+    "cordova": "~7.1.0"
+  },
+  "homepage": "https://github.com/Rudloff/spotslim-cordova",
+  "keywords": [
+    "cordova",
+    "Spotify"
+  ],
+  "license": "GPL-3.0",
+  "main": "www/dist/bundle.js",
+  "repository": "https://github.com/Rudloff/spotslim-cordova.git",
+  "scripts": {
+    "clean": "rm -r platforms/ plugins/; cordova prepare"
+  }
+}

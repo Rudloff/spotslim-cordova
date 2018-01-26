@@ -1,0 +1,75 @@
+{
+  "name": "cordova-plugin-customurlscheme",
+  "version": "4.3.0",
+  "description": "Launch your app by using this URL:  mycoolapp://, you can add a path and even pass params like this: mycoolerapp://somepath?foo=bar",
+  "cordova": {
+    "id": "cordova-plugin-customurlscheme",
+    "platforms": [
+      "ios",
+      "android",
+      "windows8",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyVerbruggen/Custom-URL-scheme.git"
+  },
+  "keywords": [
+    "Custom URL Scheme",
+    "URLscheme",
+    "URL scheme",
+    "Custom URL",
+    "Launch My App",
+    "Launch App",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-windows8"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com",
+    "url": "https://github.com/EddyVerbruggen"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EddyVerbruggen/Custom-URL-scheme/issues"
+  },
+  "homepage": "https://github.com/EddyVerbruggen/Custom-URL-scheme#readme",
+  "gitHead": "d220fb3769b8ddbb197b91f18b57ceb315a85f44",
+  "_id": "cordova-plugin-customurlscheme@4.3.0",
+  "scripts": {},
+  "_shasum": "02f968778b4093990eb0407f3fa1b1458d705f94",
+  "_from": "cordova-plugin-customurlscheme@latest",
+  "_npmVersion": "3.10.10",
+  "_nodeVersion": "6.10.3",
+  "_npmUser": {
+    "name": "eddyverbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "dist": {
+    "shasum": "02f968778b4093990eb0407f3fa1b1458d705f94",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-customurlscheme/-/cordova-plugin-customurlscheme-4.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "eddyverbruggen",
+      "email": "eddyverbruggen@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-customurlscheme-4.3.0.tgz_1496424665981_0.6795418069232255"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-customurlscheme/-/cordova-plugin-customurlscheme-4.3.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
