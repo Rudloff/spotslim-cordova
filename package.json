@@ -1,7 +1,7 @@
 {
   "name": "spotslim-cordova",
   "description": "SpotSlim Cordova app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Pierre Rudloff",
   "bugs": "https://github.com/Rudloff/spotslim-cordova/issues",
   "cordova": {
@@ -33,10 +33,10 @@
     "cordova-plugin-customurlscheme": "^4.3.0",
     "cordova-plugin-music-controls": "^2.1.4",
     "cordova-plugin-whitelist": "^1.3.2",
-    "spotslim": "0.1.1"
+    "spotslim": "0.1.2"
   },
   "devDependencies": {
-    "cordova": "~7.1.0"
+    "cordova": "~8.0.0"
   },
   "homepage": "https://github.com/Rudloff/spotslim-cordova",
   "keywords": [
