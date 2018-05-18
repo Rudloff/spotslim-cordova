@@ -23,7 +23,8 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-customurlscheme": "4.3.0",
   "cordova-plugin-crosswalk-webview": "2.3.0",
-  "cordova-plugin-music-controls": "2.1.4"
+  "cordova-plugin-music-controls": "2.1.4",
+  "cordova-android-support-gradle-release": "1.4.2"
 };
 // BOTTOM OF METADATA
 });

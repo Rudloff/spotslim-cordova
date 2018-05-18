@@ -27,6 +27,10 @@
     },
     "cordova-plugin-music-controls": {
       "PACKAGE_NAME": "pro.rudloff.spotslim"
+    },
+    "cordova-android-support-gradle-release": {
+      "ANDROID_SUPPORT_VERSION": "27.+",
+      "PACKAGE_NAME": "pro.rudloff.spotslim"
     }
   },
   "dependent_plugins": {}

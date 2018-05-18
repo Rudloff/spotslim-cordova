@@ -23,11 +23,15 @@
         "XWALK_MODE": "embedded",
         "XWALK_MULTIPLEAPK": "true"
       },
-      "cordova-plugin-music-controls": {}
+      "cordova-plugin-music-controls": {},
+      "cordova-android-support-gradle-release": {
+        "ANDROID_SUPPORT_VERSION": "27.+"
+      }
     }
   },
   "dependencies": {
     "cordova-android": "^6.3.0",
+    "cordova-android-support-gradle-release": "^1.4.2",
     "cordova-plugin-compat": "^1.1.0",
     "cordova-plugin-crosswalk-webview": "^2.3.0",
     "cordova-plugin-customurlscheme": "^4.3.0",
